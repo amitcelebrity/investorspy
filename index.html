@@ -61,6 +61,7 @@ function feedLoaded(result) {
 function OnLoad() {
   // Create a feed instance that will grab Digg's feed.
   var feed = new google.feeds.Feed("http://feeds.feedburner.com/nseindia/ann");
+    
   feed.setNumEntries(15);
   feed.includeHistoricalEntries();
   // Calling load sends the request off.  It requires a callback function.
